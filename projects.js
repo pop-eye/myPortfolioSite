@@ -178,6 +178,41 @@ const projects = [
     files: []
   },
   {
+    title: "Delphic - Collections",
+    category: "Music video",
+    year: "",
+    summary: "A Kinect-based promo for Delphic, created with Soup Collective.",
+    description: "Soup Collective's promo for Delphic explored the use of Microsoft Kinect in filmmaking. Alasdair contributed technical expertise to the project.\n\nSoup Collective also describes its work on the promo and the Transmissions research project on its website.",
+    cover: "media/uploads/delphic-collections/collections-still-1.png",
+    coverAlt: "A luminous point-cloud figure against a dark background",
+    media: [
+      { type: "image", src: "media/uploads/delphic-collections/collections-still-1.png", alt: "A luminous point-cloud figure from the Delphic video", credit: "Video still: Soup Collective" },
+      { type: "image", src: "media/uploads/delphic-collections/collections-still-2.png", alt: "A luminous point-cloud figure extending an arm", credit: "Video still: Soup Collective" }
+    ],
+    tools: ["Microsoft Kinect"],
+    links: [
+      { label: "Watch Soup Collective's video on Vimeo", url: "https://vimeo.com/57599167?fl=pl&fe=sh" },
+      { label: "Soup Collective: K is for Kinect", url: "https://soupcollective.co.uk/portfolio/k-is-for-kinect-delphic/" }
+    ],
+    files: []
+  },
+  {
+    title: "Islington Community Art Project",
+    category: "Community & installation",
+    year: "2011",
+    summary: "A sound-responsive lighting installation for the Islington estate in Salford.",
+    description: "In December 2011, a large-scale lighting installation turned the stairwell windows of Canon Hussey Court into an audio level display. Local performers and residents could interact with the lights through a microphone.\n\nAlasdair's role: system design and implementation.\n\nPartners and collaborators included Salix Homes, the University of Salford press office, Paul Haywood and Richard MacDonald of Goldsmiths. Rebecca Kevill and Sean Caherty also contributed to the wider community arts event.",
+    cover: "media/uploads/islington-community-art/lighting-event.png",
+    coverAlt: "Canon Hussey Court illuminated at night during the community arts event",
+    media: [
+      { type: "image", src: "media/uploads/islington-community-art/lighting-event.png", alt: "The illuminated tower block and a marquee at the community arts event" },
+      { type: "image", src: "media/uploads/islington-community-art/illuminated-windows.png", alt: "Green, amber and red lights in the stairwell windows of Canon Hussey Court" }
+    ],
+    tools: ["Interactive lighting", "Audio-responsive installation"],
+    links: [{ label: "The Guardian: Salford estate arts project", url: "https://www.theguardian.com/uk/the-northerner/2011/dec/13/salford-estate-arts-project-canon-hussey-court-salix-homes" }],
+    files: []
+  },
+  {
     title: "I Forgot To Say",
     category: "Performance & installation",
     year: "2019",
@@ -193,13 +228,11 @@ const projects = [
   ...[
     "Bloomin' NFT's",
     "SODA launch NFT collection",
-    "Delphic - Collections",
     "ManMet AR Marketing",
     "Plato's Living Room",
     "Digital Clothing",
     "Urban Intersections",
-    "Shang-Pool Picnic",
-    "Islington Community Art Project"
+    "Shang-Pool Picnic"
   ].map((title) => ({
     title,
     category: "Archive",
