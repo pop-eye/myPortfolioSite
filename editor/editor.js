@@ -132,7 +132,7 @@ function addRow(kind, item = {}) {
     label.textContent = "Type";
     const select = document.createElement("select");
     select.dataset.key = "type";
-    for (const [value, text] of [["image", "Image"], ["video", "Video"]]) {
+    for (const [value, text] of [["image", "Image"], ["video", "Video"], ["audio", "Audio"]]) {
       const option = document.createElement("option");
       option.value = value;
       option.textContent = text;
@@ -140,7 +140,7 @@ function addRow(kind, item = {}) {
     }
     select.value = item.type || "image";
     label.append(select);
-    fields.append(label, rowInput("Image description or video title", "description", item.type === "video" ? item.title : item.alt), rowInput("URL or path", "src", item.src, { wide: true }));
+    fields.append(label, rowInput("Image description or media title", "description", item.type === "image" ? item.alt : item.title), rowInput("URL or path", "src", item.src, { wide: true }));
     // Keep an existing poster when editing an entry.
     row.dataset.poster = item.poster || "";
     row.dataset.extra = JSON.stringify(item);
@@ -149,7 +149,7 @@ function addRow(kind, item = {}) {
     row.dataset.extra = JSON.stringify(item);
   }
   row.append(top, fields);
-  if (kind !== "links") addUpload(row, fields.querySelector(`[data-key="${kind === "media" ? "src" : "url"}"]`), kind === "media" ? "image/*,video/*" : "");
+  if (kind !== "links") addUpload(row, fields.querySelector(`[data-key="${kind === "media" ? "src" : "url"}"]`), kind === "media" ? "image/*,video/*,audio/*" : "");
   document.querySelector(`#${kind}-list`).append(row);
 }
 

@@ -22,7 +22,7 @@ const mime = {
   ".js": "text/javascript; charset=utf-8", ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg", ".png": "image/png", ".gif": "image/gif",
   ".webp": "image/webp", ".svg": "image/svg+xml", ".pdf": "application/pdf",
-  ".mp4": "video/mp4", ".webm": "video/webm"
+  ".mp4": "video/mp4", ".webm": "video/webm", ".mp3": "audio/mpeg", ".wav": "audio/wav", ".ogg": "audio/ogg"
 };
 
 function respond(res, status, data, type = "application/json; charset=utf-8") {
@@ -62,7 +62,7 @@ function validProjects(projects) {
     project && typeof project === "object" && typeof project.title === "string" && project.title.trim() &&
     ["category", "year", "summary", "description", "cover", "coverAlt"].every((key) => typeof project[key] === "string") &&
     Array.isArray(project.tools) && project.tools.every((tool) => typeof tool === "string") &&
-    Array.isArray(project.media) && project.media.every((item) => item && ["image", "video"].includes(item.type) && typeof item.src === "string") &&
+    Array.isArray(project.media) && project.media.every((item) => item && ["image", "video", "audio"].includes(item.type) && typeof item.src === "string") &&
     ["links", "files"].every((key) => Array.isArray(project[key]) && project[key].every((item) => item && typeof item.label === "string" && typeof item.url === "string"))
   );
 }

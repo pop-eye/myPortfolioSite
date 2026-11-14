@@ -79,3 +79,5 @@ h1>span:first-child,.about-inner h2 span{color:#9a9aa8}
 .privacy-section h2{color:var(--ink);font-size:16px;margin:24px 0 10px}
 .privacy-section p{max-width:780px;margin-bottom:10px}
 .privacy-section a{text-decoration:underline;text-underline-offset:3px}
+.detail-audio{width:100%;margin:12px 0}
+.detail-about p{white-space:pre-line}

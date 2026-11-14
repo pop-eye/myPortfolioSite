@@ -48,7 +48,8 @@ Open `projects.js`. Each entry in the `projects` list represents one project. Co
   media: [
     { type: "image", src: "media/my-cover.jpg", alt: "Description of the image" },
     { type: "video", src: "https://www.youtube.com/watch?v=VIDEO_ID", title: "Project film" },
-    { type: "video", src: "media/my-film.mp4", poster: "media/my-cover.jpg" }
+    { type: "video", src: "media/my-film.mp4", poster: "media/my-cover.jpg" },
+    { type: "audio", src: "media/recording.mp3", title: "Audio recording" }
   ],
   tools: ["Blender", "Photography"],
   links: [
@@ -62,7 +63,7 @@ Open `projects.js`. Each entry in the `projects` list represents one project. Co
 }
 ```
 
-Put your images, videos, and files in folders alongside `index.html`, then use their relative paths as above. Image URLs also work. Videos support YouTube and Vimeo links or direct browser-playable video files such as MP4. Use `alt` text to describe images, and `title` to identify embedded videos. A project with an empty `media` list uses its cover image; if the cover is also empty, the card displays an abstract placeholder. Empty `tools`, `links`, or `files` lists are simply not shown.
+Put your images, videos, and files in folders alongside `index.html`, then use their relative paths as above. Image URLs also work. Videos support YouTube, Vimeo and VideoPress links or direct browser-playable video files such as MP4; audio supports browser-playable files such as MP3. Use `alt` text to describe images, and `title` to identify videos and audio. A project with an empty `media` list uses its cover image; if the cover is also empty, the card displays an abstract placeholder. Empty `tools`, `links`, or `files` lists are simply not shown. Some imported media is hosted by WordPress or VideoPress and depends on those services remaining publicly accessible.
 
 Only add files you are happy to make public: anything included in a published website can be accessed by visitors. Large videos are often better hosted on a video platform.
 

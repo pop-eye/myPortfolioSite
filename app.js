@@ -112,6 +112,10 @@ function embedUrl(src) {
       const id = url.pathname.split("/").filter(Boolean).pop();
       if (/^\d+$/.test(id)) return `https://player.vimeo.com/video/${id}`;
     }
+    if (host === "videopress.com") {
+      const parts = url.pathname.split("/").filter(Boolean);
+      if (["v", "embed"].includes(parts[0]) && /^[A-Za-z0-9]+$/.test(parts[1] || "")) return `https://videopress.com/embed/${parts[1]}`;
+    }
   } catch {
     return null;
   }
@@ -122,6 +126,14 @@ function renderMedia(item) {
   const url = safeUrl(item.src);
   if (!url) return null;
   if (item.type === "image") return image(item.src, item.alt, "detail-image");
+  if (item.type === "audio") {
+    const audio = element("audio", "detail-audio");
+    audio.src = url;
+    audio.controls = true;
+    audio.preload = "metadata";
+    if (item.title) audio.setAttribute("aria-label", item.title);
+    return audio;
+  }
   if (item.type === "video") {
     const embed = embedUrl(item.src);
     if (embed) {
