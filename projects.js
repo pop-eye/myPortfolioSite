@@ -2,6 +2,23 @@
 // These initial entries are based on publicly available research; add your own media and details.
 const projects = [
   {
+    title: "Lindisfarne Runes",
+    category: "Digital heritage",
+    year: "",
+    summary: "A touchscreen installation inviting visitors to create their own runic stone.",
+    description: "Created for the museum at English Heritage's Lindisfarne Priory on Holy Island, Runes invites visitors to paint a carved stone or write their name in runes. Their creations are saved to a linked Google Drive.\n\nAlasdair developed the interactive in Unreal Engine as an Android app for Samsung Galaxy Tab S8+ tablets in custom housings. Working with Mark Thomas of production partner Soup Collective and the English Heritage interpretation and site teams, he also handled installation, snagging and remote support.",
+    cover: "media/uploads/lindisfarne-runes/runes-installation.jpg",
+    coverAlt: "The Runes touchscreen installation at Lindisfarne Priory museum",
+    media: [
+      { type: "image", src: "media/uploads/lindisfarne-runes/runes-installation.jpg", alt: "Two touchscreen tablets beneath a runic alphabet display in the museum" },
+      { type: "video", src: "media/uploads/lindisfarne-runes/runes-interactive.mp4", title: "Lindisfarne Runes interactive installation", poster: "media/uploads/lindisfarne-runes/runes-installation.jpg" },
+      { type: "image", src: "media/uploads/lindisfarne-runes/lindisfarne-priory.jpg", alt: "Lindisfarne Priory ruins viewed from the churchyard" }
+    ],
+    tools: ["Unreal Engine", "Android", "Touchscreen interaction", "Google Drive"],
+    links: [],
+    files: []
+  },
+  {
     title: "The Oracle",
     category: "Interactive installation",
     year: "2026",
