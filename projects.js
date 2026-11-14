@@ -2,6 +2,19 @@
 // These initial entries are based on publicly available research; add your own media and details.
 const projects = [
   {
+    title: "Granny Jackson's Dead",
+    category: "Immersive storytelling",
+    year: "",
+    summary: "A 360° VR film and holograms created with Big Telly.",
+    description: "For Granny Jackson's Dead, a project with Big Telly, Alasdair created a 360° film for virtual reality and a series of holograms. Further details and media will be added.",
+    cover: "",
+    coverAlt: "",
+    media: [],
+    tools: ["360° film", "Virtual reality", "Holograms"],
+    links: [],
+    files: []
+  },
+  {
     title: "Lindisfarne Runes",
     category: "Digital heritage",
     year: "",
