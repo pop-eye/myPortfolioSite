@@ -2,6 +2,43 @@
 // These initial entries are based on publicly available research; add your own media and details.
 const projects = [
   {
+    title: "The Oracle",
+    category: "Interactive installation",
+    year: "2026",
+    summary: "An offline light and sound system connecting environmental data with a living mycelium sculpture.",
+    description: "Created for The Guardians of Living Matter at Lowry, Salford, The Oracle combines a living mycelium sculpture by Sophy King and John-Paul Brown with an environmental light and sound system.\n\nAs creative technologist, Alasdair designed and developed the system, translating recorded environmental data into light and sound. Running offline, it replayed measurements from the previous year, offering an alternative to cloud-based generative AI.",
+    cover: "media/uploads/the-oracle/oracle-installation-1.jpg",
+    coverAlt: "The Oracle's suspended mycelium sculpture illuminated in a gallery",
+    media: [
+      { type: "image", src: "media/uploads/the-oracle/oracle-installation-1.jpg", alt: "The suspended mycelium sculpture illuminated above visitors at Lowry", credit: "Photo: Michael Pollard" },
+      { type: "image", src: "media/uploads/the-oracle/oracle-installation-2.jpg", alt: "A close view of the illuminated branching mycelium sculpture", credit: "Photo: Michael Pollard" }
+    ],
+    tools: ["Python", "Environmental data", "DMX lighting", "sACN", "Interactive sound"],
+    links: [
+      { label: "The Oracle: artwork and photographs", url: "https://axisweb.org/artwork/behold-the-emergence-of-oracle" },
+      { label: "The Guardians of Living Matter: review", url: "https://corridor8.co.uk/article/john-paul-brown-and-sophy-king-the-guardians-of-living-matter/" }
+    ],
+    files: []
+  },
+  {
+    title: "Would you tell me, please, which way I ought to go from here?",
+    category: "Interactive installation",
+    year: "2013",
+    summary: "A responsive floor projection exploring direction and movement.",
+    description: "Created by artist Claire Weetman and shown at the Bluecoat, Liverpool, in 2013, this interactive installation projects moving arrows onto the floor. When visitors enter the space, the arrows turn to follow them, playfully questioning who is guiding whom.\n\nAlasdair developed the camera-tracking and interactive projection software using OpenFrameworks.",
+    cover: "",
+    coverAlt: "",
+    media: [
+      { type: "video", src: "https://vimeo.com/75711846", title: "Would you tell me, please, which way I ought to go from here?", credit: "Video: Claire Weetman" }
+    ],
+    tools: ["OpenFrameworks", "Camera tracking", "Interactive projection"],
+    links: [
+      { label: "Watch on Vimeo", url: "https://vimeo.com/75711846" },
+      { label: "Claire Weetman: project background", url: "https://claireweetman.blogspot.com/2013/07/" }
+    ],
+    files: []
+  },
+  {
     title: "Children of Talos",
     category: "Immersive storytelling",
     year: "",
@@ -22,9 +59,12 @@ const projects = [
     year: "",
     summary: "Exploring immersive simulation in legal education.",
     description: "Research into the use of virtual reality for mooting and legal education. The work explores how immersive environments can support experiential learning.",
-    cover: "",
-    coverAlt: "",
-    media: [],
+    cover: "media/uploads/moot-court-vr/courtroom-view-1.png",
+    coverAlt: "Virtual courtroom with figures at the judge's bench",
+    media: [
+      { type: "image", src: "media/uploads/moot-court-vr/courtroom-view-1.png", alt: "A virtual courtroom with figures at the judge's bench and a witness stand", credit: "Image: Alasdair Swenson" },
+      { type: "image", src: "media/uploads/moot-court-vr/courtroom-view-2.png", alt: "A second view of the virtual courtroom and judge's bench", credit: "Image: Alasdair Swenson" }
+    ],
     tools: ["Virtual reality", "Education", "Research"],
     links: [
       { label: "Mooting in Virtual Reality", url: "https://link.springer.com/chapter/10.1007/978-3-031-25390-4_8" }
@@ -98,7 +138,9 @@ const projects = [
     coverAlt: "Image from Rats Tales",
     media: [
       { type: "video", src: "media/uploads/wordpress-archive/np1cc4RC.mp4", title: "Rats Tales excerpt" },
-      { type: "image", src: "media/uploads/wordpress-archive/rtales.jpg", alt: "Image from Rats Tales" }
+      { type: "image", src: "media/uploads/wordpress-archive/rtales.jpg", alt: "Image from Rats Tales" },
+      { type: "image", src: "media/uploads/rats-tales/production-poster.png", alt: "Royal Exchange Theatre poster for Carol Ann Duffy's Rats' Tales", credit: "Royal Exchange Theatre, Manchester" },
+      { type: "image", src: "media/uploads/rats-tales/stage-performance.png", alt: "Performers on stage in Rats' Tales", credit: "Royal Exchange Theatre, Manchester" }
     ],
     tools: ["Projection mapping", "Multi-screen display", "Media triggers"],
     links: [{ label: "Guardian review", url: "https://www.theguardian.com/stage/2012/dec/04/rats-tales-review" }, { label: "Soup Collective", url: "http://soupcollective.co.uk/portfolio/rats-tales-royal-exchange-theatre/" }],
@@ -119,7 +161,8 @@ const projects = [
       { type: "image", src: "media/uploads/wordpress-archive/capture6.png", alt: "Still from the VR experience" },
       { type: "image", src: "media/uploads/wordpress-archive/capture7.png", alt: "Still from the VR experience" },
       { type: "image", src: "media/uploads/wordpress-archive/capture8.png", alt: "Still from the VR experience" },
-      { type: "image", src: "media/uploads/wordpress-archive/capture10.png", alt: "Still from the VR experience" }
+      { type: "image", src: "media/uploads/wordpress-archive/capture10.png", alt: "Still from the VR experience" },
+      { type: "image", src: "media/uploads/demdike-stare/pzyk-vr-poster.png", alt: "Liverpool International Festival of Psychedelia 2016 poster featuring Forest of Evil and two other VR artworks", credit: "Liverpool International Festival of Psychedelia" }
     ],
     tools: ["Samsung Gear VR", "Unreal Engine"],
     links: [],
