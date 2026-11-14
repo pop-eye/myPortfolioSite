@@ -64,7 +64,12 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer wrap"><a class="footer-brand" href="#top">ALASDAIR SWENSON<span>.</span></a><p>DIGITAL MEDIA &amp; CREATIVE TECHNOLOGY &nbsp; © <span id="year"></span></p><a href="#work">BACK TO WORK ↑</a></footer>
+    <footer class="site-footer wrap"><a class="footer-brand" href="#top">ALASDAIR SWENSON<span>.</span></a><p>DIGITAL MEDIA &amp; CREATIVE TECHNOLOGY &nbsp; © <span id="year"></span></p><a href="#privacy">PRIVACY</a><a href="#work">BACK TO WORK ↑</a></footer>
+    <section class="privacy-section wrap" id="privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy</h2>
+      <p>On alasdairswenson.co.uk, this site uses Cloudflare Web Analytics to understand visits, page views, referring sites and approximate visitor locations. Analytics data is sent to Cloudflare. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare's privacy policy</a> for information about its data practices.</p>
+      <p>This site also loads fonts from Google Fonts. Embedded videos, when present in project details, are provided by their respective video platforms.</p>
+    </section>
 
     <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
       <div class="dialog-shell">
@@ -72,5 +77,14 @@
         <div id="dialog-content"></div>
       </div>
     </dialog>
+    <script>
+      if (location.hostname === "alasdairswenson.co.uk" || location.hostname === "www.alasdairswenson.co.uk") {
+        const beacon = document.createElement("script");
+        beacon.type = "module";
+        beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+        beacon.setAttribute("data-cf-beacon", '{"token":"58b7d4e7d8744234b50407b8e5e3b026"}');
+        document.body.append(beacon);
+      }
+    </script>
   </body>
 </html>

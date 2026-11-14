@@ -75,3 +75,7 @@ h1>span:first-child,.about-inner h2 span{color:#9a9aa8}
 .detail-image,.detail-video{background:#24232f}
 .detail-link:hover{color:var(--accent)}
 @media(max-width:560px){.hero-main{min-height:0}h1{font-size:clamp(48px,11vw,70px)}.placeholder-label{font-size:8px}}
+.privacy-section{padding:0 0 42px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}
+.privacy-section h2{color:var(--ink);font-size:16px;margin:24px 0 10px}
+.privacy-section p{max-width:780px;margin-bottom:10px}
+.privacy-section a{text-decoration:underline;text-underline-offset:3px}

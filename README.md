@@ -16,7 +16,7 @@ The editor only listens on your computer. Saving writes to `projects.js` and `me
 
 ## Publishing with GitHub Pages
 
-GitHub Pages hosts the public site as static files; the local editor itself does not run there. First, create a GitHub repository with this website folder as its root, make an initial commit and push, and configure GitHub Pages to publish the same branch. Set up Git authentication and your Git author name and email on this computer; GitHub Desktop can help with the initial setup. The branch must track its same-named branch on a GitHub `origin` remote. This setup has not yet been done.
+GitHub Pages hosts the public site as static files; the local editor itself does not run there. This folder is connected to the portfolio's GitHub repository, and GitHub Pages publishes the `main` branch. The branch must track its same-named branch on a GitHub `origin` remote, and Git needs an author name, email and authentication.
 
 After setup, save your project and select **Publish to GitHub** in the editor. Review the destination, files and any previously committed but unpushed work, then confirm. The editor commits only changes in `projects.js` and `media/uploads`; however, Git pushes all unpushed commits on the branch, which are listed in the review, including files changed in their history. Changes to other files need to be committed separately. Already-staged changes must be reviewed and committed or unstaged separately before using the button.
 
@@ -24,7 +24,13 @@ The button uses your existing Git credentials; it does not store a password or t
 
 You can use `alasdairswenson.co.uk` as a custom domain. Configure the domain in GitHub Pages and update DNS at your domain provider, following [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site). Verify the domain with GitHub before pointing DNS at Pages, configure both the apex domain and `www` as appropriate, and enable HTTPS once available. Check for an existing website and email-related DNS records before changing anything; do not remove unrelated records.
 
-GitHub Pages publishes website files publicly. Do not upload sensitive or private materials. Use external video hosting for large video files and check the rights and availability of third-party media. A repository and DNS have not been set up by this editor.
+GitHub Pages publishes website files publicly. Do not upload sensitive or private materials. Use external video hosting for large video files and check the rights and availability of third-party media. The custom domain and DNS have not been set up by this editor.
+
+## Website analytics
+
+The site includes a Cloudflare Web Analytics beacon configured for `alasdairswenson.co.uk`. It only loads on that hostname and `www.alasdairswenson.co.uk`, not the GitHub Pages URL or local previews. It will begin collecting data when the custom domain is connected and the site is visited there. Visit the Cloudflare dashboard's Web Analytics section to view reports. Page views measure page loads; opening a project detail does not count as a separate page view.
+
+The website includes a short privacy notice, which should be reviewed and completed for your circumstances, including applicable UK privacy requirements and any contact details. If the analytics hostname or provider changes, update the beacon and notice in `index.html`. The site also uses Google Fonts and may embed third-party videos.
 
 ## Add or edit a project
 
