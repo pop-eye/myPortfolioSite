@@ -63,7 +63,7 @@ Open `projects.js`. Each entry in the `projects` list represents one project. Co
 }
 ```
 
-Put your images, videos, and files in folders alongside `index.html`, then use their relative paths as above. Image URLs also work. Videos support YouTube, Vimeo and VideoPress links or direct browser-playable video files such as MP4; audio supports browser-playable files such as MP3. Use `alt` text to describe images, and `title` to identify videos and audio. A project with an empty `media` list uses its cover image; if the cover is also empty, the card displays an abstract placeholder. Empty `tools`, `links`, or `files` lists are simply not shown. Some imported media is hosted by WordPress or VideoPress and depends on those services remaining publicly accessible.
+Put your images, videos, and files in folders alongside `index.html`, then use their relative paths as above. Image URLs also work. Videos support YouTube, Vimeo and VideoPress links or direct browser-playable video files such as MP4; audio supports browser-playable files such as MP3. Use `alt` text to describe images, and `title` to identify videos and audio. A project with an empty `media` list uses its cover image; if the cover is also empty, the card displays an abstract placeholder. Empty `tools`, `links`, or `files` lists are simply not shown. The imported WordPress portfolio media is stored in `media/uploads/wordpress-archive`; the 360° project video uses an HD copy because the original exceeds GitHub's file size limit.
 
 Only add files you are happy to make public: anything included in a published website can be accessed by visitors. Large videos are often better hosted on a video platform.
 
