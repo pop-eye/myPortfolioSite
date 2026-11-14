@@ -189,7 +189,7 @@ const projects = [
       { type: "image", src: "media/uploads/delphic-collections/collections-still-1.png", alt: "A luminous point-cloud figure from the Delphic video", credit: "Video still: Soup Collective" },
       { type: "image", src: "media/uploads/delphic-collections/collections-still-2.png", alt: "A luminous point-cloud figure extending an arm", credit: "Video still: Soup Collective" }
     ],
-    tools: ["Microsoft Kinect"],
+    tools: ["Microsoft Kinect", "OpenFrameworks", "Custom capture software", "After Effects"],
     links: [
       { label: "Watch Soup Collective's video on Vimeo", url: "https://vimeo.com/57599167?fl=pl&fe=sh" },
       { label: "Soup Collective: K is for Kinect", url: "https://soupcollective.co.uk/portfolio/k-is-for-kinect-delphic/" }
@@ -213,6 +213,40 @@ const projects = [
     files: []
   },
   {
+    title: "Urban Intersections",
+    category: "Interactive installation",
+    year: "2009",
+    summary: "A public installation connecting movement in Belfast with a virtual world.",
+    description: "Presented at Belfast's Waterfront Plaza during ISEA 2009, Urban Intersections brought visitors and Second Life participants together across a physical plaza and its virtual counterpart. A large projection on the Waterfront building formed a live digital mural exploring boundaries and Belfast's social history.\n\nWorking with Paul Sermon and Charlotte Gould, Alasdair designed and built the outdoor tracking solution. Participants wore an LED-covered avatar head; as they moved through the plaza, the system tracked their movements to control an avatar in Second Life.\n\nThe wider installation also included contributions by sound and media artist Peter Appleton.",
+    cover: "media/uploads/urban-intersections/belfast-projection.png",
+    coverAlt: "A participant beneath a projection of the Second Life environment in Belfast",
+    media: [
+      { type: "image", src: "media/uploads/urban-intersections/belfast-projection.png", alt: "A participant wearing the illuminated tracking head beneath a projected virtual plaza" },
+      { type: "image", src: "media/uploads/urban-intersections/tracking-helmet.png", alt: "The puppet-like tracking head with red lights" },
+      { type: "video", src: "media/uploads/urban-intersections/urban-intersections-video.mp4", title: "Urban Intersections video" }
+    ],
+    tools: ["Second Life", "Motion tracking", "Interactive projection"],
+    links: [{ label: "Urban Intersections: project documentation", url: "https://www.paulsermon.org/urban/" }],
+    files: []
+  },
+  {
+    title: "Shang-Pool Picnic",
+    category: "Interactive installation",
+    year: "2010",
+    summary: "A shared augmented-reality picnic connecting audiences in Liverpool and Shanghai.",
+    description: "Shang-pool: Picnic in Arcadia connected audiences at the Bluecoat Gallery in Liverpool and the University of Shanghai during Liverpool Biennial 2010. The installation brought live images of participants together in a shared virtual picnic scene, with animated elements responding to their movements.\n\nAlasdair developed the augmented-reality experience and custom tracking software for the project, which linked the two locations by video. The installation was developed by artists Charlotte Gould and Paul Sermon.",
+    cover: "media/uploads/shang-pool-picnic/picnic-installation-new.png",
+    coverAlt: "Participants gathered around a screen during the Shang-Pool Picnic installation",
+    media: [
+      { type: "image", src: "media/uploads/shang-pool-picnic/picnic-installation-new.png", alt: "Participants on a picnic blanket watching the interactive installation" },
+      { type: "image", src: "media/uploads/shang-pool-picnic/shared-picnic-screen.png", alt: "Participants holding tracking markers in the shared picnic scene" },
+      { type: "image", src: "media/uploads/shang-pool-picnic/augmented-reality-screen.png", alt: "A screen showing participants with tracking markers and an augmented-reality cat" }
+    ],
+    tools: ["Augmented reality", "Custom tracking software", "Telepresence"],
+    links: [{ label: "Shang-pool: Picnic in Arcadia", url: "https://paulsermon.org/shangpool/" }],
+    files: []
+  },
+  {
     title: "I Forgot To Say",
     category: "Performance & installation",
     year: "2019",
@@ -230,9 +264,7 @@ const projects = [
     "SODA launch NFT collection",
     "ManMet AR Marketing",
     "Plato's Living Room",
-    "Digital Clothing",
-    "Urban Intersections",
-    "Shang-Pool Picnic"
+    "Digital Clothing"
   ].map((title) => ({
     title,
     category: "Archive",

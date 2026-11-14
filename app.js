@@ -179,8 +179,6 @@ function openProject(project, index) {
       media.append(rendered);
     }
   });
-  if (media.children.length) dialogContent.append(media);
-
   const details = element("div", "detail-layout");
   const about = element("div", "detail-about");
   about.append(element("h3", "detail-label", "ABOUT THE PROJECT"), element("p", "", project.description || project.summary || ""));
@@ -200,6 +198,7 @@ function openProject(project, index) {
   if (files) meta.append(files);
   details.append(meta);
   dialogContent.append(details);
+  if (media.children.length) dialogContent.append(media);
   dialog.showModal();
   dialog.scrollTop = 0;
 }
