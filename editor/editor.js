@@ -140,7 +140,7 @@ function addRow(kind, item = {}) {
     }
     select.value = item.type || "image";
     label.append(select);
-    fields.append(label, rowInput("Image description or media title", "description", item.type === "image" ? item.alt : item.title), rowInput("URL or path", "src", item.src, { wide: true }));
+    fields.append(label, rowInput("Image description or media title", "description", item.type === "image" ? item.alt : item.title), rowInput("URL or path", "src", item.src, { wide: true }), rowInput("Credit (optional, shown beneath media)", "credit", item.credit, { wide: true }));
     // Keep an existing poster when editing an entry.
     row.dataset.poster = item.poster || "";
     row.dataset.extra = JSON.stringify(item);
@@ -186,6 +186,7 @@ function readRows(kind) {
         if (row.dataset.poster) result.poster = row.dataset.poster;
       }
       delete result.description;
+      if (!result.credit) delete result.credit;
     }
     return result;
   });

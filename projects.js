@@ -130,12 +130,18 @@ const projects = [
     category: "Virtual reality",
     year: "2016",
     summary: "Sculpture and virtual reality brought together in an immersive installation.",
-    description: "Jo Clements' project brings sculptural structures together with virtual reality. Sam Ingleson and Steve Oliver created digital content for the installation.\n\nRole: Unreal Engine development, animation, audio and video, and 3D scanning. Timeline: Four months. Completed October 2016. Video by Maria Ruban.",
+    description: "Jo Clements combined sculptural structures with virtual reality to create immersive sensory environments. Three padded copper domes housed headsets showing digital works commissioned from artists Sam Ingleson and Steve Oliver.\n\nAlasdair sourced and built the hardware and developed the artworks in Unreal Engine, including animation, audio and video, and 3D scanning. The project was completed over four months and shown at Caustic Coastal, Manchester, in October 2016.\n\nThe installation used copper, calico padding, MDF and scaffolding alongside OSVR headsets and Windows VR-ready PCs.",
     cover: "media/uploads/wordpress-archive/img_0746-768x576-1.jpg",
     coverAlt: "Image from We Will Never As Humans Be Able To See 360°",
     media: [
-      { type: "video", src: "media/uploads/wordpress-archive/WwYvsS1w.mp4", title: "We Will Never As Humans Be Able To See 360°, video by Maria Ruban" },
-      { type: "image", src: "media/uploads/wordpress-archive/img_0746-768x576-1.jpg", alt: "Image from the installation" }
+      { type: "video", src: "media/uploads/wordpress-archive/WwYvsS1w.mp4", title: "We Will Never As Humans Be Able To See 360°", credit: "Video by Maria Ruban" },
+      { type: "image", src: "media/uploads/wordpress-archive/img_0746-768x576-1.jpg", alt: "Image from the installation" },
+      { type: "image", src: "media/uploads/we-will-never-see-360/gallery-installation.jpg", alt: "A visitor beneath a copper dome in the gallery", credit: "Image: Alex Nelu" },
+      { type: "image", src: "media/uploads/we-will-never-see-360/vr-stills.jpg", alt: "Three scenes from the virtual reality artworks", credit: "Image: Alex Nelu" },
+      { type: "image", src: "media/uploads/we-will-never-see-360/copper-domes.jpg", alt: "Copper domes and a visitor at Caustic Coastal", credit: "Image: Alex Nelu" },
+      { type: "image", src: "media/uploads/we-will-never-see-360/visitors.jpg", alt: "Visitors experiencing the installation beneath the domes", credit: "Image: Alex Nelu" },
+      { type: "image", src: "media/uploads/we-will-never-see-360/vr-headset.jpg", alt: "A visitor wearing a virtual reality headset", credit: "Image: Alex Nelu" },
+      { type: "image", src: "media/uploads/we-will-never-see-360/visitor-under-dome.jpg", alt: "A visitor standing beneath a copper dome", credit: "Image: Alex Nelu" }
     ],
     tools: ["OSVR headsets", "Unreal Engine", "3D scanning"],
     links: [{ label: "Jo Clements: project details", url: "https://www.joclements.co.uk/we-will-never-as-humans-be-able-to-see-360/" }],

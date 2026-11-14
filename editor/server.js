@@ -62,7 +62,7 @@ function validProjects(projects) {
     project && typeof project === "object" && typeof project.title === "string" && project.title.trim() &&
     ["category", "year", "summary", "description", "cover", "coverAlt"].every((key) => typeof project[key] === "string") &&
     Array.isArray(project.tools) && project.tools.every((tool) => typeof tool === "string") &&
-    Array.isArray(project.media) && project.media.every((item) => item && ["image", "video", "audio"].includes(item.type) && typeof item.src === "string") &&
+    Array.isArray(project.media) && project.media.every((item) => item && ["image", "video", "audio"].includes(item.type) && typeof item.src === "string" && (item.credit === undefined || typeof item.credit === "string")) &&
     ["links", "files"].every((key) => Array.isArray(project[key]) && project[key].every((item) => item && typeof item.label === "string" && typeof item.url === "string"))
   );
 }

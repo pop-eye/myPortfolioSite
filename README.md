@@ -10,7 +10,7 @@ The editor needs [Node.js](https://nodejs.org/) installed, but no additional pac
 node editor\server.js
 ```
 
-Open `http://127.0.0.1:4177` in your browser. Select a project or add a new one, then save your changes. You can add images, videos, links and files using URLs or upload files from your computer. Each uploaded file is copied into `media/uploads`; uploading alone does not attach it to the saved project until you save. Uploads are limited to 20 MB each; use a YouTube or Vimeo link for larger videos. Stopping the terminal with Ctrl+C stops the local editor.
+Open `http://127.0.0.1:4177` in your browser. Select a project or add a new one, then save your changes. You can add images, videos, links and files using URLs or upload files from your computer. Each media item has an optional credit displayed beneath it in the project details. Each uploaded file is copied into `media/uploads`; uploading alone does not attach it to the saved project until you save. Uploads are limited to 20 MB each; use a YouTube or Vimeo link for larger videos. Stopping the terminal with Ctrl+C stops the local editor.
 
 The editor only listens on your computer. Saving writes to `projects.js` and `media/uploads`; saving does not publish or commit anything. Deleted projects do not delete uploaded files. Remove unwanted uploads manually after checking that no other projects use them. If `projects.js` changes outside the editor while it is open, reload before saving to avoid overwriting those changes.
 
@@ -46,7 +46,7 @@ Open `projects.js`. Each entry in the `projects` list represents one project. Co
   cover: "media/my-cover.jpg",
   coverAlt: "A useful description of the cover image",
   media: [
-    { type: "image", src: "media/my-cover.jpg", alt: "Description of the image" },
+    { type: "image", src: "media/my-cover.jpg", alt: "Description of the image", credit: "Photo: Photographer name" },
     { type: "video", src: "https://www.youtube.com/watch?v=VIDEO_ID", title: "Project film" },
     { type: "video", src: "media/my-film.mp4", poster: "media/my-cover.jpg" },
     { type: "audio", src: "media/recording.mp3", title: "Audio recording" }
@@ -63,7 +63,7 @@ Open `projects.js`. Each entry in the `projects` list represents one project. Co
 }
 ```
 
-Put your images, videos, and files in folders alongside `index.html`, then use their relative paths as above. Image URLs also work. Videos support YouTube, Vimeo and VideoPress links or direct browser-playable video files such as MP4; audio supports browser-playable files such as MP3. Use `alt` text to describe images, and `title` to identify videos and audio. A project with an empty `media` list uses its cover image; if the cover is also empty, the card displays an abstract placeholder. Empty `tools`, `links`, or `files` lists are simply not shown. The imported WordPress portfolio media is stored in `media/uploads/wordpress-archive`; the 360° project video uses an HD copy because the original exceeds GitHub's file size limit.
+Put your images, videos, and files in folders alongside `index.html`, then use their relative paths as above. Image URLs also work. Videos support YouTube, Vimeo and VideoPress links or direct browser-playable video files such as MP4; audio supports browser-playable files such as MP3. Use `alt` text to describe images, `title` to identify videos and audio, and optional `credit` text to credit any media item beneath it in the project details. A project with an empty `media` list uses its cover image; if the cover is also empty, the card displays an abstract placeholder. Empty `tools`, `links`, or `files` lists are simply not shown. The imported WordPress portfolio media is stored in `media/uploads/wordpress-archive`; the 360° project video uses an HD copy because the original exceeds GitHub's file size limit.
 
 Only add files you are happy to make public: anything included in a published website can be accessed by visitors. Large videos are often better hosted on a video platform.
 

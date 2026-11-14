@@ -170,7 +170,14 @@ function openProject(project, index) {
   const mediaItems = project.media && project.media.length ? project.media : project.cover ? [{ type: "image", src: project.cover, alt: project.coverAlt || project.title }] : [];
   mediaItems.forEach((item) => {
     const rendered = renderMedia(item);
-    if (rendered) media.append(rendered);
+    if (!rendered) return;
+    if (item.credit && item.credit.trim()) {
+      const figure = element("figure", "detail-media-item");
+      figure.append(rendered, element("figcaption", "detail-media-credit", item.credit));
+      media.append(figure);
+    } else {
+      media.append(rendered);
+    }
   });
   if (media.children.length) dialogContent.append(media);
 

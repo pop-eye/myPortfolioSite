@@ -81,3 +81,5 @@ h1>span:first-child,.about-inner h2 span{color:#9a9aa8}
 .privacy-section a{text-decoration:underline;text-underline-offset:3px}
 .detail-audio{width:100%;margin:12px 0}
 .detail-about p{white-space:pre-line}
+.detail-media-item{margin:0;min-width:0}
+.detail-media-credit{padding:9px 0 7px;color:var(--muted);font-size:11px;line-height:1.5;letter-spacing:.02em}
