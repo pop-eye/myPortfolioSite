@@ -2,6 +2,19 @@
 // These initial entries are based on publicly available research; add your own media and details.
 const projects = [
   {
+    title: "Mímir’s Vase",
+    category: "Interactive installation",
+    year: "2025",
+    summary: "An AI-driven sculptural oracle that turns machine vision into poetic observations.",
+    description: "Mímir’s Vase is an artificial-intelligence-driven artefact that observes its surroundings and responds with poetic descriptions. Developed as a 3D-printed, servo-driven sculpture with a digital twin in Unreal Engine, it brings together computer vision, image captioning and a language model to explore machine perception, ritual and empathy.\n\nAfter testing revealed that the animatronic hardware was too fragile for long-term exhibition, the work was presented as an Unreal Engine simulation, broadcast as if from an unknown place. It was shown at SODA’s Dorkbot and the Academy of Fine Arts Warsaw’s Agentic Anxiety in 2025.",
+    cover: "",
+    coverAlt: "",
+    media: [],
+    tools: ["Unreal Engine", "Computer vision", "Artificial intelligence", "Image captioning", "Animatronics", "3D printing"],
+    links: [],
+    files: []
+  },
+  {
     title: "Granny Jackson's Dead",
     category: "Immersive storytelling",
     year: "",
