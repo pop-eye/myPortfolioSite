@@ -7,9 +7,17 @@ const projects = [
     year: "2025",
     summary: "An AI-driven sculptural oracle that turns machine vision into poetic observations.",
     description: "Mímir’s Vase is an artificial-intelligence-driven artefact that observes its surroundings and responds with poetic descriptions. Developed as a 3D-printed, servo-driven sculpture with a digital twin in Unreal Engine, it brings together computer vision, image captioning and a language model to explore machine perception, ritual and empathy.\n\nAfter testing revealed that the animatronic hardware was too fragile for long-term exhibition, the work was presented as an Unreal Engine simulation, broadcast as if from an unknown place. It was shown at SODA’s Dorkbot and the Academy of Fine Arts Warsaw’s Agentic Anxiety in 2025.",
-    cover: "",
-    coverAlt: "",
-    media: [],
+    cover: "media/uploads/mimirs-vase/gallery-audience.jpg",
+    coverAlt: "Visitors viewing Mímir’s Vase at an exhibition",
+    media: [
+      { type: "image", src: "media/uploads/mimirs-vase/gallery-audience.jpg", alt: "Visitors gathered around a monitor showing the Mímir’s Vase digital twin in a gallery" },
+      { type: "image", src: "media/uploads/mimirs-vase/gallery-event.jpg", alt: "Visitors viewing the Mímir’s Vase display during an exhibition event" },
+      { type: "image", src: "media/uploads/mimirs-vase/concept-artwork.png", alt: "Illustrated scene of Norse figures gathered around an ornate vase beside a longship" },
+      { type: "image", src: "media/uploads/mimirs-vase/physical-prototype.jpg", alt: "Purple 3D-printed animatronic prototype with camera eyes, wiring and electronics" },
+      { type: "image", src: "media/uploads/mimirs-vase/cad-mechanism.png", alt: "CAD view of the vase’s mechanical eye assembly" },
+      { type: "image", src: "media/uploads/mimirs-vase/eye-mechanism-render.png", alt: "3D render of the prototype’s paired camera-eye mechanism" },
+      { type: "image", src: "media/uploads/mimirs-vase/vase-wireframe-render.png", alt: "Wireframe 3D model of the vase with its internal eye mechanism" }
+    ],
     tools: ["Unreal Engine", "Computer vision", "Artificial intelligence", "Image captioning", "Animatronics", "3D printing"],
     links: [],
     files: []
@@ -139,6 +147,7 @@ const projects = [
     coverAlt: "Image from A Walked and Recorded Journey",
     media: [
       { type: "image", src: "media/uploads/wordpress-archive/lakeland_50_and_100.jpg", alt: "Image from A Walked and Recorded Journey" },
+      { type: "image", src: "media/uploads/walked-and-recorded-journey/system-diagram.webp", alt: "Hand-drawn system diagram showing runners' leg-mounted microphones relaying audio through mobile phones to gallery speakers" },
       { type: "audio", src: "media/uploads/wordpress-archive/walk_rec_2233_clip.mp3", title: "Sample of the broadcast" }
     ],
     tools: ["Leg-mounted recording", "Remote mobile broadcast", "Live streaming"],
