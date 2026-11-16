@@ -67,6 +67,7 @@ const projects = [
     tools: ["Python", "Environmental data", "DMX lighting", "sACN", "Interactive sound"],
     links: [
       { label: "The Oracle: artwork and photographs", url: "https://axisweb.org/artwork/behold-the-emergence-of-oracle" },
+      { label: "The Oracle Mk 2", url: "https://axisweb.org/artwork/the-oracle-mk-2" },
       { label: "The Guardians of Living Matter: review", url: "https://corridor8.co.uk/article/john-paul-brown-and-sophy-king-the-guardians-of-living-matter/" }
     ],
     files: []

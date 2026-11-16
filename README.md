@@ -32,6 +32,10 @@ The site includes a Cloudflare Web Analytics beacon configured for `alasdairswen
 
 The website includes a short privacy notice, which should be reviewed and completed for your circumstances, including applicable UK privacy requirements and any contact details. If the analytics hostname or provider changes, update the beacon and notice in `index.html`. The site also uses Google Fonts and may embed third-party videos.
 
+## Articles and profile links
+
+The articles section and footer links are in `index.html`; edit them there to add or change articles and profile links. These changes are outside the local editor's publishing scope and must be committed separately.
+
 ## Add or edit a project
 
 Open `projects.js`. Each entry in the `projects` list represents one project. Copy an existing entry, change its values, and separate entries with commas. The project category automatically appears as a filter.
